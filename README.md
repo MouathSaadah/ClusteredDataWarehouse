@@ -4,8 +4,11 @@ Welcome, this is the solution of a small project that contains analyzing FX deal
 
 # Step Solution
 1- Creat DB
+
 2- Start Task
+
 3- Unit test
+
 
 # 1- Create DB
 I used Postgres, and for GUI design, I used the tool DataGrip
