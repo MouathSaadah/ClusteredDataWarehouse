@@ -9,6 +9,8 @@ Welcome, this is the solution of a small project that contains analyzing FX deal
 
 3- Unit test
 
+4- Docker File
+
 
 # 1- Create DB
 I used Postgres, and for GUI design, I used the tool DataGrip
@@ -77,3 +79,11 @@ I used IntelliJ IDE, and I created three classes. We have just one task => One o
 # 3-Unit test
 
 I used JUnit 4. I tried to add some cases to see that no method needs a unit test. 
+
+# 4-Docker File
+
+I added docker file to the project and pushed the image to docker repository to share the project 
+used this line in command :
+
+     docker run -i 1434323/clustered-data-warehouse:1.0
+     
