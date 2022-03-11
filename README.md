@@ -53,11 +53,15 @@ create unique index deal_id_uindex on deal (id);
 deal_id_sq sequance :
 
 create sequence deal_id_sq
+
     as integer
+    
     minvalue 1001
+    
     maxvalue 99999;
 
 alter sequence deal_id_sq owner to Postgres;
+
 
 # 2-  Start Task
 
