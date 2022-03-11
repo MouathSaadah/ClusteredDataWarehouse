@@ -1,19 +1,19 @@
 # Bloomberg to analyze FX deals
 
-Welcome this is the solution of small project that contain analyze FX deals by just one small requerment : One of customer stories is to accept deals details from and persist them into DB.
+Welcome, this is the solution of a small project that contains analyzing FX deals by just one small requirement: One of the customer stories is to accept deals and persist them into DB.
 
-# Step Slotion
+# Step Solution
 1- Creat DB
 2- Start Task
 3- Unit test
 
-# 1- Creat DB
-I used Postgres and for GUI design I used tool DataGrip
+# 1- Create DB
+I used Postgres, and for GUI design, I used the tool DataGrip
 
-dawnload link  PostGris  : https://www.postgresql.org/download/
-dawnload link DataGirp   : https://www.jetbrains.com/datagrip/?source=google&medium=cpc&campaign=15034927876&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0PhY64sIdPLnQGPOSz5ENqiEcaA0uemQdB4h6dxNljRYYhvDjtfFzBoC8rUQAvD_BwE
+download link  PostGris: https://www.postgresql.org/download/
+download link DataGirp   : https://www.jetbrains.com/datagrip/?source=google&medium=cpc&campaign=15034927876&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0PhY64sIdPLnQGPOSz5ENqiEcaA0uemQdB4h6dxNljRYYhvDjtfFzBoC8rUQAvD_BwE
 
-I just create one table name is 'deal' and one sequance name is 'deal_id_sq'
+I just created one table name, 'deal,' and one sequence name, ' deal_id_sq.'
 
 deal table :
 
@@ -29,7 +29,7 @@ create table deal
 );
 
 alter table deal
-    owner to postgres;
+    owner to Postgres;
 
 create unique index deal_id_uindex
     on deal (id);
@@ -41,16 +41,16 @@ create sequence deal_id_sq
     minvalue 1001
     maxvalue 99999;
 
-alter sequence deal_id_sq owner to postgres;
+alter sequence deal_id_sq owner to Postgres;
 
 # 2-  Start Task
 
-I used intilij IDE and I created three classes we have just one task => One of customer stories is to accept deals details from and persist them into DB.
+I used IntelliJ IDE, and I created three classes. We have just one task => One of the customer stories is to accept deals details from and persist them into DB.
 
-# Main class : to add sample and make user interactive with system
-# Deal class : it's cope form table deal with validation in eatch filed
-# DBConnection class : to conection to db and it's contain any query or sql code in system
+ * Main class: to add sample and make user interaction with the system
+ * Deal class: it's cope form table deal with validation in each field
+ * DBConnection class: to connect to DB and it contains any query or SQL code in the system
 
-3-Unit test
+# 3-Unit test
 
-I used JUnit 4 I tried to added some cases to finaly I see there is no method need unit test 
+I used JUnit 4. I tried to add some cases to see that no method needs a unit test. 
