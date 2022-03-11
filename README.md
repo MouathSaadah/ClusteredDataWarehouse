@@ -11,6 +11,7 @@ Welcome, this is the solution of a small project that contains analyzing FX deal
 I used Postgres, and for GUI design, I used the tool DataGrip
 
 download link  PostGris: https://www.postgresql.org/download/
+
 download link DataGirp   : https://www.jetbrains.com/datagrip/?source=google&medium=cpc&campaign=15034927876&gclid=CjwKCAiAg6yRBhBNEiwAeVyL0PhY64sIdPLnQGPOSz5ENqiEcaA0uemQdB4h6dxNljRYYhvDjtfFzBoC8rUQAvD_BwE
 
 I just created one table name, 'deal,' and one sequence name, ' deal_id_sq.'
