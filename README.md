@@ -26,9 +26,9 @@ I just created one table name, 'deal,' and one sequence name, ' deal_id_sq.'
 
 deal table :
 
-create table deal
+    create table deal
 
-(
+    (
 
     id                integer    not null
     
@@ -44,7 +44,7 @@ create table deal
     
     amount            numeric    not null
     
-);
+    );
 
 alter table deal owner to Postgres;
 
@@ -52,7 +52,7 @@ create unique index deal_id_uindex on deal (id);
 
 deal_id_sq sequance :
 
-create sequence deal_id_sq
+    create sequence deal_id_sq
 
     as integer
     
@@ -60,7 +60,7 @@ create sequence deal_id_sq
     
     maxvalue 99999;
 
-alter sequence deal_id_sq owner to Postgres;
+    alter sequence deal_id_sq owner to Postgres;
 
 
 # 2-  Start Task
