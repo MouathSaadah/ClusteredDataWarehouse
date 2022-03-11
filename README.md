@@ -29,19 +29,16 @@ deal table :
 create table deal
 (
     id                integer    not null
-        constraint deal_pk
-            primary key,
+    constraint deal_pk
+    primary key,
     sender_currency   varchar(3) not null,
     receiver_currency varchar(3) not null,
     deal_date         timestamp  not null,
     amount            numeric    not null
 );
 
-alter table deal
-    owner to Postgres;
-
-create unique index deal_id_uindex
-    on deal (id);
+alter table deal owner to Postgres;
+create unique index deal_id_uindex on deal (id);
 
 deal_id_sq sequance :
 
