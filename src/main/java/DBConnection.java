@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class DBConnection {
 
-    private static Logger logger = Logger.getLogger("DBConnection");
+    private static final Logger logger = Logger.getLogger("DBConnection");
     private DataSource ds;
 
     public DBConnection() {
@@ -43,6 +43,7 @@ public class DBConnection {
             pStmt.setInt(4, deal.getAmount());
             pStmt.executeUpdate();
             System.out.println("Added new Deal to DB Complete");
+
         }
     }
 }

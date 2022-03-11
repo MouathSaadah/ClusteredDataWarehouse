@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 
 public class Main {
 
-    private static Logger logger = Logger.getLogger("Main");
-    private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private static final Logger logger = Logger.getLogger("Main");
+    private static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args){
         new Thread( () -> {
