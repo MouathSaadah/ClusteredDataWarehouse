@@ -16,6 +16,14 @@ download link DataGirp   : https://www.jetbrains.com/datagrip/?source=google&med
 
 I just created one table name, 'deal,' and one sequence name, ' deal_id_sq.'
 
+
+![image](https://user-images.githubusercontent.com/39570598/157900052-7a2d7f7f-2332-4bcb-ba1b-4b8e99c0b132.png)
+
+
+
+
+
+
 deal table :
 
 create table deal
