@@ -7,13 +7,19 @@ public class Deal {
     private int amount;
 
     public Deal(String fromCurrency, String toCurrency, String amount) {
-        if(fromCurrency ==null || toCurrency ==null || amount == null) {
-            Logger.getLogger("Deal").severe("Enter Valid Deal Data Please!");
-            throw new IllegalArgumentException();
+        try {
+            if (fromCurrency == null || toCurrency == null || amount == null) {
+                Logger.getLogger("Deal").severe("Enter Valid Deal Data Please!");
+                throw new IllegalArgumentException();
+            }
+            setAmount(Integer.parseInt(amount));
+            setFromCurrency(CountryCode.getByCode(fromCurrency));
+            setToCurrency(CountryCode.getByCode(toCurrency));
         }
-        setAmount(Integer.parseInt(amount));
-        setFromCurrency(CountryCode.getByCode(fromCurrency));
-        setToCurrency(CountryCode.getByCode(toCurrency));
+        catch(Exception e){
+            Logger.getLogger("Deal").severe(e.getMessage());
+            Logger.getLogger("Deal").severe(e.toString());
+        }
     }
 
     public CountryCode getFromCurrency() {

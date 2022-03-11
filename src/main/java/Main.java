@@ -20,7 +20,8 @@ public class Main {
 
             }
             catch(Exception ex) {
-                ex.printStackTrace();
+                logger.severe(ex.getMessage());
+                logger.severe(ex.toString());
             }
         }).start();
         System.out.println();
